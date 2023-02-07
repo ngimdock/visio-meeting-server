@@ -1,1 +1,1 @@
-export * from './messages-to-subscribe';
+export * from './meeting-subscribers';
