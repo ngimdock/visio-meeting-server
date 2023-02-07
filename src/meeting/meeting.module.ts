@@ -1,6 +1,7 @@
 import { Module } from '@nestjs/common';
+import { MeetingGateway } from './meeting.gateway';
 
 @Module({
-  providers: [],
+  providers: [MeetingGateway],
 })
 export class MeetingModule {}
