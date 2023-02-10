@@ -38,6 +38,8 @@ export class MeetingGateway
   ) {
     const { meetingId, userId } = joinMeetingDto;
 
+    console.log({ joinMeetingDto });
+
     socket.join(meetingId);
 
     socket.to(meetingId).emit(MeetingSubscribers.UserJoined, userId);
